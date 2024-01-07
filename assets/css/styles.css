@@ -354,6 +354,7 @@ body.light-theme {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin-top: 25px;
 }
 
 .home__social,

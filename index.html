@@ -82,7 +82,7 @@
                 <div class="home__data">
                     <span class="home__greeting">Hello, I'm</span>
                     <h1 class="home__name">Shivmangal</h1>
-                    <h3 class="home__education">Frontend Developer</h3>
+                    <span id="element"></span>
 
                     <div class="home__button">
                         <a download="" href="./assets/pdf/ShivResume.pdf" class="button button--ghost">
@@ -177,7 +177,7 @@
                                 <i class='bx bxs-badge-check'></i>
 
                                 <div>
-                                    <h3 class="skills__name">CSS/SCSS</h3>
+                                    <h3 class="skills__name">CSS</h3>
                                     <span class="skills__level">Advanced</span>
                                 </div>
                             </div>
@@ -190,6 +190,14 @@
                                     <span class="skills__level">Advanced</span>
                                 </div>
                             </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
 
                         </div>
                         <div class="skills__group">
@@ -197,8 +205,8 @@
                                 <i class='bx bxs-badge-check'></i>
 
                                 <div>
-                                    <h3 class="skills__name">Bootstrap</h3>
-                                    <span class="skills__level">Intermediate</span>
+                                    <h3 class="skills__name">MUI</h3>
+                                    <span class="skills__level">Advanced</span>
                                 </div>
                             </div>
 
@@ -206,7 +214,7 @@
                                 <i class='bx bxs-badge-check'></i>
 
                                 <div>
-                                    <h3 class="skills__name">Git</h3>
+                                    <h3 class="skills__name">Tailwind</h3>
                                     <span class="skills__level">Advanced</span>
                                 </div>
                             </div>
@@ -217,6 +225,15 @@
                                 <div>
                                     <h3 class="skills__name">React</h3>
                                     <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Redux</h3>
+                                    <span class="skills__level">Intermediate</span>
                                 </div>
                             </div>
 
@@ -234,35 +251,6 @@
 
                                 <div>
                                     <h3 class="skills__name">Node JS</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Python</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">MySQL</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">PHP</h3>
                                     <span class="skills__level">Intermediate</span>
                                 </div>
                             </div>
@@ -271,8 +259,29 @@
                                 <i class='bx bxs-badge-check'></i>
 
                                 <div>
+                                    <h3 class="skills__name">Express Js</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
                                     <h3 class="skills__name">Firebase</h3>
-                                    <span class="skills__level">Advanced</span>
+                                    <span class="skills__level">Intermediate</span>
                                 </div>
                             </div>
 
@@ -281,6 +290,15 @@
 
                                 <div>
                                     <h3 class="skills__name">Mongo DB</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
                                     <span class="skills__level">Advanced</span>
                                 </div>
                             </div>
@@ -728,6 +746,21 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <!-- Autotyped Text -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#element", {
+          strings: [
+            "Web developer.",
+            "Frontend developer.",
+            "UI Developer.",
+            "Gamer.",
+          ],
+          typeSpeed: 50,
+          loop: true
+        });
+      </script>
 </body>
 
 </html>
