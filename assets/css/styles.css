@@ -1170,7 +1170,7 @@ body.light-theme {
   }
 
   .work__container {
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(3, 300px);
     gap: 3rem;
   }
 
