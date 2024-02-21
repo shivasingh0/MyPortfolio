@@ -882,12 +882,14 @@
                     <form class="contact__form" onsubmit="Mail(); reset(); return false;">
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Name</label>
-                            <input type="text" placeholder="Enter name" class="contact__form-input" id="clintName" required>
+                            <input type="text" placeholder="Enter name" class="contact__form-input" id="clintName"
+                                required>
                         </div>
 
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Number</label>
-                            <input type="text" placeholder="Enter number" class="contact__form-input" id="clintPhone" required>
+                            <input type="text" placeholder="Enter number" class="contact__form-input" id="clintPhone"
+                                required>
                         </div>
 
                         <div class="contact__form-div">
@@ -974,6 +976,9 @@
     <!--=============== SWIPER JS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
 
+    <!--=============== SWEET ALERT JS ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!--=============== MIXITUP FILTER ===============-->
     <script src="assets/js/mixitup.min.js"></script>
 
@@ -1006,13 +1011,20 @@
             const enquiry = document.getElementById("clintEnquiry").value;
 
             Email.send({
-                SecureToken: "069fc111-6722-4efe-be6a-2411f0df1074",
+                SecureToken: "1fe2c172-1382-40a6-b3e6-c7b96509dcc8",
                 To: 'shiva2003rajawat@gmail.com',
                 From: "deadshotshiva@gmail.com",
                 Subject: "Enquery from Website",
                 Body: "Name:- " + name + " <br/> Email:- " + email + " <br/> Phone:- " + phone + " <br/> Message:- " + enquiry
             }).then(
-                message => alert(message)
+                // message => alert(message)
+                Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "Your work has been saved",
+                    showConfirmButton: false,
+                    timer: 1500
+                })
             );
         }
     </script>
