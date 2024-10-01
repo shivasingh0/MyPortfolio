@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+                publicKey: "LwgmLMxYTfShzrwN-",
+            });
+        })();
+    </script>
+
     <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="./assets/favicons/fevicon.png" type="image/x-icon">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -85,7 +95,7 @@
                     <span id="element"></span>
 
                     <div class="home__button">
-                        <a download="" href="./assets/pdf/Shiv Resume (1).pdf" class="button button--ghost">
+                        <a download="" href="./assets/pdf/ShivMangal_Resume.pdf" class="button button--ghost">
                             Download CV
                         </a>
 
@@ -520,9 +530,16 @@
                 <div class="services__card">
                     <h3 class="services__title">i-Magnus</h3>
 
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
+                    <div style="display: flex; justify-content: space-between;">
+                        <a href="https://imagnus.in/" target="_blank" class="work__button">
+                            Live Link <i class='bx bx-right-arrow work__icon'></i>
+                        </a>
+
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+
 
                     <div class="services__modal">
                         <div class="services__modal-content">
@@ -624,9 +641,17 @@
                     <div class="serv">
                         <h3 class="services__title">Dental CRM</h3>
 
-                        <span class="services__button">
-                            See More <i class='bx bx-right-arrow services__icon'></i>
-                        </span>
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="https://www.panel.shribalajilaserdentalclinic.com/" target="_blank"
+                                class="work__button">
+                                Live Link <i class='bx bx-right-arrow work__icon'></i>
+                            </a>
+                            <span class="services__button">
+                                See More <i class='bx bx-right-arrow services__icon'></i>
+                            </span>
+                        </div>
+
+
                     </div>
 
 
@@ -637,7 +662,8 @@
                             <h3 class="services__modal-title">CRM</h3>
 
                             <p class="services__modal-description">
-                                A Dental CRM (Customer Relationship Management) system is designed to enhance the interaction between dental practitioners and their patients.
+                                A Dental CRM (Customer Relationship Management) system is designed to enhance the
+                                interaction between dental practitioners and their patients.
                             </p>
 
                             <ul class="services__modal-list">
@@ -652,7 +678,8 @@
                                 <li class="services__modal-item">
                                     <i class='bx bx-check-circle'></i>
                                     <p class="services__modal-info">
-                                        <strong>Backend: </strong>Node.js, Express.js, MondoDB and Socket.io for responsive and dynamic user
+                                        <strong>Backend: </strong>Node.js, Express.js, MondoDB and Socket.io for
+                                        responsive and dynamic user
                                         interfaces.
                                     </p>
                                 </li>
@@ -668,7 +695,8 @@
                                 <li class="services__modal-item">
                                     <i class='bx bx-check-circle'></i>
                                     <p class="services__modal-info">
-                                        <strong>Features: </strong>Optimized customer interactions and streamlined business processes within the dental practice. 
+                                        <strong>Features: </strong>Optimized customer interactions and streamlined
+                                        business processes within the dental practice.
                                     </p>
                                 </li>
 
@@ -706,10 +734,10 @@
                 </div>
 
                 <div class="services__card">
-                    <h3 class="services__title">Bestway Financial</h3>
+                    <h3 class="services__title">Researchinn</h3>
 
                     <div style="display: flex; justify-content: space-between;">
-                        <a href="https://bestwayfinancial.in/" target="_blank" class="work__button">
+                        <a href="https://researchinn.com/" target="_blank" class="work__button">
                             Live Link <i class='bx bx-right-arrow work__icon'></i>
                         </a>
 
@@ -722,17 +750,17 @@
                         <div class="services__modal-content">
                             <i class='bx bx-x services__modal-close'></i>
 
-                            <h3 class="services__modal-title">Bestway Financial</h3>
+                            <h3 class="services__modal-title">Researchinn</h3>
 
                             <p class="services__modal-description">
-                                Bestway Financial is a premier stock market advisory firm dedicated to providing expert
+                                Researchinn is a premier stock market advisory firm dedicated to providing expert
                                 guidance and strategic insights to investors seeking to optimize their portfolios.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                
+
 
                 <div class="services__card">
                     <h3 class="services__title">Muhurat Investing</h3>
@@ -810,7 +838,12 @@
                             <h3 class="services__modal-title">Rio Capital</h3>
 
                             <p class="services__modal-description">
-                                FOURPOINTS HOLIDAYS is a reputable travel services company with a deep understanding of Jammu and Kashmir's tourist destinations. With extensive experience in the hospitality sector, we prioritize guest satisfaction and strive to make their holidays truly memorable. Our services include hotel bookings and car rentals across all three divisions of the state. Count on us for a hassle-free and rejuvenating holiday experience, knowing that we prioritize your needs and ensure a seamless vacation.
+                                FOURPOINTS HOLIDAYS is a reputable travel services company with a deep understanding of
+                                Jammu and Kashmir's tourist destinations. With extensive experience in the hospitality
+                                sector, we prioritize guest satisfaction and strive to make their holidays truly
+                                memorable. Our services include hotel bookings and car rentals across all three
+                                divisions of the state. Count on us for a hassle-free and rejuvenating holiday
+                                experience, knowing that we prioritize your needs and ensure a seamless vacation.
                             </p>
                         </div>
                     </div>
@@ -1034,7 +1067,7 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== SWEET ALERT JS ===============-->
-   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!--=============== MIXITUP FILTER ===============-->
     <script src="assets/js/mixitup.min.js"></script>
@@ -1067,22 +1100,26 @@
             const phone = document.getElementById("clintPhone").value;
             const enquiry = document.getElementById("clintEnquiry").value;
 
-            Email.send({
-                SecureToken: "74869e9a-3b79-48d7-9659-f1f3ae9a0a70",
-                To: 'shiva2003rajawat@gmail.com',
-                From: "deadshotshiva@gmail.com",
-                Subject: "Enquery from Website",
-                Body: "<b> Name:- </b>" + name + " <br><hr><b> Email:- </b>" + email + " <br><hr><b> Phone:- </b>" + phone + " <br><hr><b> Message:- </b>" + enquiry
+            emailjs.send("service_76b5xjs", "template_6qa662e", {
+                to_name: "Shiv",
+                from_name: name,
+                email: email,
+                phone: phone,
+                message: enquiry
             }).then(
-                // message => alert(message)
-                Swal.fire({
-                    position: "top-end",
-                    icon: "success",
-                    title: "Enquiry submitted! Get back to you soon",
-                    showConfirmButton: false,
-                    timer: 3500
-                })
-            );
+                (response) => {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: "Enquiry submitted! Get back to you soon",
+                        showConfirmButton: false,
+                        timer: 3500
+                    })
+                },
+                (error) => {
+                    console.log('FAILED...', error);
+                },
+            )
         }
     </script>
 </body>
